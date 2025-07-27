@@ -19,7 +19,10 @@ The objective of this project is to build a pipeline that:
 ## 🔁 Pipeline Workflow
 
 1. 🎵 Input `.mp3` files in the `/input` folder  
-2. 🎙️ (Optional) Separate vocals using Spleeter  
-3. 🎛️ Convert vocals to `.wav` using FFmpeg  
+2. 🎙️ (Optional) Separate vocals using Demucs  
+3. 🎛️ Convert vocals.wav to `.mp3` files using FFmpeg  
 4. 🧠 Transcribe vocals using Whisper (large-v2)  
-5. 📝 Generate `.srt` subtitle files  
+5. 📝 Generate `.srt` subtitle files
+
+## NOTE: 
+Installing the Librosa package is a must since it is connected with Demucs as well as parts of FFmpeg codes.
