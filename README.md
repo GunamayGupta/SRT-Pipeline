@@ -16,11 +16,10 @@ The objective of this project is to build a pipeline that:
 
 ---
 
-## 🚀 Pipeline Workflow
+## 🔁 Pipeline Workflow
 
-```mermaid
-graph TD
-    A[MP3 Songs in /input] --> B[Vocal Separation using Spleeter]
-    B --> C[Convert vocals to WAV using ffmpeg]
-    C --> D[Transcribe using Whisper (large-v2)]
-    D --> E[Generate song_name.srt]
+1. 🎵 Input `.mp3` files in the `/input` folder  
+2. 🎙️ (Optional) Separate vocals using Spleeter  
+3. 🎛️ Convert vocals to `.wav` using FFmpeg  
+4. 🧠 Transcribe vocals using Whisper (large-v2)  
+5. 📝 Generate `.srt` subtitle files  
